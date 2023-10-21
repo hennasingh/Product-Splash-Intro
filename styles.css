@@ -19,7 +19,9 @@ h1 {
     color: #575757;
     font-weight: 900;
 }
-
+.img-main {
+    width: 60%;
+}
 /* =================
     Intro
    ================= */
@@ -27,6 +29,12 @@ h1 {
 .intro { 
     color: #fff;
     background-color: #9480e4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 250px;
+
 }
 
 /* ====================
