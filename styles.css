@@ -17,12 +17,14 @@ h2 {
 
 .beta-text { 
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 .subheading {
     color: #575757;
     font-weight: 900;
     margin-bottom: 0.5em;
+    text-transform: uppercase;
 }
 
 p {
@@ -75,3 +77,13 @@ p {
 /* =================
     Media queries 
    ================= */
+
+   @media (min-width: 678px) {
+        .container {
+            display: flex;
+        }
+        .intro, .main-content {
+            width: 50%;
+        }
+
+   }
