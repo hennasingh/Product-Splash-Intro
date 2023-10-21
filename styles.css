@@ -1,6 +1,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #404040;
+    margin:0
 }
 /* =================
     Typography 
@@ -31,11 +32,11 @@ p {
     font-size: 1.125rem;
     line-height: 1.35;
 }
-.img-main {
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    border-radius: 50%;
+
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
 }
 
 
@@ -57,6 +58,8 @@ p {
 .intro { 
     color: #fff;
     background-color: #9480e4;
+    background-image: url(./images/intro-bg.png);
+    background-size: cover; /** fill the full width and height maintaining the ratio */
     justify-content: center;
     text-align: center;
     min-height: 250px;
@@ -71,11 +74,23 @@ p {
     padding-top: 2.5em;
 }
 
+.img-main {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
 /* =================
     Form
    ================= */
    
-
+   input {
+    display:block;
+    width:100%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+   }
 /* =================
     Media queries 
    ================= */
