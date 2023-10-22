@@ -1,3 +1,6 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #404040;
@@ -19,6 +22,7 @@ h2 {
 .beta-text { 
     font-weight: 900;
     text-transform: uppercase;
+    margin-bottom: 1.5em;
 }
 
 .subheading {
@@ -31,6 +35,15 @@ h2 {
 p {
     font-size: 1.125rem;
     line-height: 1.35;
+}
+
+.top-text {
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+    margin: 0 auto;
+    order: -1;
 }
 
 .fine-print {
@@ -60,7 +73,7 @@ p {
     background-color: #9480e4;
     background-image: url(./images/intro-bg.png);
     background-size: cover; /** fill the full width and height maintaining the ratio */
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     min-height: 250px;
 }
@@ -80,17 +93,47 @@ p {
     margin: 0 auto;
     border-radius: 50%;
 }
+.main-content p,
+form {
+    max-width: 450px;
+}
 
 /* =================
     Form
    ================= */
    
-   input {
-    display:block;
+   input, .btn {
+    font-family: inherit;
     width:100%;
+    border-radius: 5px;
+}
+
+input {
     margin-bottom: 1em;
+    border: 2px solid #d1d5db;
     padding: 0.5em;
-   }
+}
+
+input:focus {
+    outline: none;
+    border-color: #8a71ec;
+    background-color: #e6e8ec;
+}
+.btn {
+    background-color:#8a71ec ;
+    color:#fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    margin-top: 1em;
+    padding: 1em 0;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #b7a7f6;
+}
 /* =================
     Media queries 
    ================= */
